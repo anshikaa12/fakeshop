@@ -13,7 +13,10 @@
   overflow-y: auto;
   margin-bottom: 2rem;
 }
-
+.clear:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
 .filter {
   justify-content: space-between;
   margin-bottom: 1rem;

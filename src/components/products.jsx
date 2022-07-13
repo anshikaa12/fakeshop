@@ -1,9 +1,20 @@
 import React from "react";
+import { useFilterContext } from "../context/filterContext";
 import { useProducts } from "../sevices/allProducts";
-
+import { ratingSortedList, categorySortedList } from "../context/filterReducer";
 function Products() {
   const { products } = useProducts();
-  return products.map((data) => {
+  const { filterState } = useFilterContext();
+  const updatedRatedList =
+    filterState.rating != ""
+      ? ratingSortedList(filterState.rating, products)
+      : products;
+  const updatedCategoryList =
+    filterState.categories.length !== 0
+      ? categorySortedList(filterState.categories, updatedRatedList)
+      : updatedRatedList;
+
+  return updatedCategoryList.map((data) => {
     return (
       <div class="e-basic-card">
         <div class="e-card-badge">

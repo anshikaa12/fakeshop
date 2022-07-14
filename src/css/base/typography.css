@@ -25,12 +25,15 @@
 .text-align-center {
   text-align: center;
 }
-.prime-color-text{
-  color:var(--primary-color);
+.prime-color-text {
+  color: var(--primary-color);
 }
-.accent-color-text{
-  color:var(--accent-color);
+.accent-color-text {
+  color: var(--accent-color);
 }
-.secondary-color-text{
-  color:var(--secondary-color);
+.secondary-color-text {
+  color: var(--secondary-color);
+}
+.grey-color-text {
+  color: gray;
 }

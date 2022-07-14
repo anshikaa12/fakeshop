@@ -4,6 +4,7 @@ import Products from "../components/products";
 import Sidebar from "../components/sidebar";
 
 function ProductListing() {
+ 
   return (
     <div>
       <Nav />

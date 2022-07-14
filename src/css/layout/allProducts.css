@@ -9,6 +9,7 @@
 .e-card-img {
   height: 60%;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .column-3-grid {

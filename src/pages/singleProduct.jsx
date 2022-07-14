@@ -29,7 +29,7 @@ function SingleProduct() {
           </div>
           <div className="about-product flex-col">
             <h2 className="h2-text">{currentProduct.title}</h2>
-            <p className="h3-text">{currentProduct.desciption}</p>
+            <p className="h3-text">{currentProduct.description}</p>
             <div className="price-details flex-row">
               <span className="h2-text prime-color-text">
                 {currentProduct.price}
@@ -40,16 +40,16 @@ function SingleProduct() {
             <hr className="side-hr" />
             <div className="icon-details flex-col">
               <div className="flex-row">
-                <i class="fas fa-truck h5-text"></i>
+                <i className="fas fa-truck h5-text"></i>
                 <p className="h5-text">Fast delivery</p>
               </div>
               <div className="flex-row">
-                <i class="far fa-calendar-check h5-text"></i>
+                <i className="far fa-calendar-check h5-text"></i>
                 <p className="h5-text">Currently in Stock</p>
               </div>
               <div className="flex-row product-btn">
-                <button class="mid-btn btn-primary">Add to Cart</button>
-                <button class="mid-btn btn-accent-outline">
+                <button className="mid-btn btn-primary">Add to Cart</button>
+                <button className="mid-btn btn-accent-outline">
                   Add to Wishlist
                 </button>
               </div>
